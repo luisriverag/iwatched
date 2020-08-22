@@ -24,7 +24,7 @@ class CreateTitlesTable extends Migration
             $table->string('end_year',16)->nullable();
             $table->string('runtime_minutes', 16)->nullable();
             $table->string('genres', 64)->nullable();
-            $table->float('weight')->default(0)->index();
+            $table->bigInteger('weight')->default(0)->index();
         });
     }
 
